@@ -22,116 +22,143 @@
     <title>San Pedro - Sitio web</title>
 </head>
 <body>
-    <header class="sticky-top">
-        <nav class="navbar navbar-expand-lg">
-            <div class="container">
-                <!-- menu hamburguesa (responsive) -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <!-- logo -->
-                <a class="navbar-brand" href="index.html"> <img src="./img/Escudo_de_San_Pedro_(Buenos_Aires).png"alt="Logo sp">
-                </a>
-                <h1>San Pedro</h1>
-                <!-- buscador y carrito -->
-                <div class="navbar-btn-container">
-                    <button class="navbar-btn"><i class="fa-solid fa-magnifying-glass"></i></button>  
-                </div>
-                <!-- nav -->
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto me-auto mb-2 mb-lg-0">
-                        <li class="nav-item p-2">
-                            <a class="nav-link" aria-current="page" href="index.html"><b>INICIO</b></a>
-                        </li>
-                        
-                        <!-- otros items del nav -->
-                        <li class="nav-item p-2">
-                            <a class="nav-link" href="./pages/informacion.html">Información</a>
-                        </li>
-                        <li class="nav-item p-2">
-                            <a class="nav-link" href="./pages/lugares.html">Lugares</a>
-                        </li>
-                        <li class="nav-item p-2">
-                            <a class="nav-link" href="./pages/comollegar.html">¿Como llegar?</a>
-                        </li>
-                        <li class="nav-item p-2">
-                            <a class="nav-link" href="./pages/contacto.html">CONTACTO</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
 
-    <div id="carouselExampleIndicators" class="carousel slide">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="./img/plazoleta4.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="./img/Plaza_San_Martín,_San_Pedro,_Provincia_de_Buenos_Aires.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="./img/pasepublico1.jfif" class="d-block w-100" alt="...">
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
+    <header class="header">
+    <!-- navbar -->
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary ">
+        <nav class="navbar bg-body-tertiary">
+            <div class="container">
+              <a class="navbar-brand" href="#">
+                <img src="./img/Escudo_de_San_Pedro_(Buenos_Aires).png" alt="Bootstrap" width="100" height="100">
+              </a>
+            </div>
+          </nav>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+
+        <div class="container">
+          
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/informacion.html">Informacíon</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/lugares.html">Lugares</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/galeria.html">Galeria</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+              </li>
+              
+            </ul>
+            
+          </div>
+        </div>
+      </nav>
+    </header>
+   <!-- Carousel -->
+
+   <div id="carouselExampleCaptions" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./img/pasepublico1.jfif" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Paseo público</h5>
+          <p>"Parque urbano con áreas verdes, laguna, deportes y recreación."</p>
+        </div>
       </div>
+      <div class="carousel-item">
+        <img src="./img/mirador1.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Los miradores de la barranca</h5>
+          <p>La vista desde los miradores es impactante. Desde este punto se observa: la laguna, el Río Paraná, sus islas y la avenida costera.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="./img/plazoleta4.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Plazoleta Fray Cayetano Rodríguez</h5>
+          <p> Esta plaza lleva el nombre del sacerdote católico Fray Cayetano Rodríguez, quien fue uno de los fundadores de la Universidad de Buenos Aires y también se destacó como escritor y poeta.
+          </p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
     
     
       
 
+    <!-- cards -->
+    <section class="tarjetas">
+        <div class="container">
+            <div class="row g-3">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card">
+                        <img src="./img/20201028_065648.jpg" alt="asd" class="card-img-top">
+                        <div class="card-body">
+                            <h2 class="card-title">Informacíon</h2>
+                            <p class="card-text">San Pedro es una ciudad argentina en la provincia de Buenos Aires, conocida por su historia, paisajes naturales y turismo.</p>
+                            <button type="button" class="btn btn-success">Mas información</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card">
+                        <img src="./img/20201028_072510.jpg" alt="asd" class="card-img-top">
+                        <div class="card-body">
+                            <h2 class="card-title">Lugares</h2>
+                            <p class="card-text">Algunos lugares para visitar en San Pedro son el río Paraná, la Plaza Constitución, el Museo Paleontológico y la Estación Fluvial.</p>
+                            <button type="button" class="btn btn-success">Mas información</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card">
+                        <img src="./img/tren_sanpedro1.jpg" alt="asd" class="card-img-top">
+                        <div class="card-body">
+                            <h2 class="card-title">¿Como llegar?</h2>
+                            <p class="card-text">Se puede llegar a San Pedro en auto por la Ruta Nacional 9 o en transporte público desde Buenos Aires.</p>
+                            <button type="button" class="btn btn-success">Mas información</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+      </section>
+    
+
     <div class="container">
-        <div class="row mt-5">
-            <div class="col-4">
-                <div class="card" style="width: 18rem;">
-                    <img src="./img/20201028_065648.jpg" class="card-img-top" alt="banner1">
-                    <div class="card-body">
-                      <h5 class="card-title">Información</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, esse.</p>
-                      <a href="./pages/informacion.html" class="btn btn-success">Click aca</a>
-                    </div>
-                  </div>
-            </div>
-            <div class="col-4">
-                <div class="card" style="width: 18rem;">
-                    <img src="./img/20201028_072510.jpg" class="card-img-top" alt="banner2">
-                    <div class="card-body">
-                      <h5 class="card-title">¿Que hacer?</h5>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, esse.</p>
-                      <a href="./pages/quehacer.html" class="btn btn-success">Click aca</a>
-                    </div>
-                  </div>
-            </div>
-            <div class="col-4">
-                <div class="card" style="width: 18rem;">
-                    <img src="./img/tren_sanpedro1.jpg" class="card-img-top" alt="banner3">
-                    <div class="card-body">
-                      <h5 class="card-title">¿Como llegar?</h5>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, esse.</p>
-                      <a href="./pages/comollegar.html" class="btn btn-success">Click aca</a>
-                    </div>
-                  </div>
-            </div>
+      <div class="container-mapa">
+        <div class="container-sm">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53116.036057739155!2d-59.700285544079684!3d-33.68947866063263!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95ba22ed0eb1a55f%3A0xe5f2bb57c8ee993a!2sSan%20Pedro%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1679471835050!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </div>
     
-    <div class="container-sm">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53116.036057739155!2d-59.700285544079684!3d-33.68947866063263!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95ba22ed0eb1a55f%3A0xe5f2bb57c8ee993a!2sSan%20Pedro%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1679471835050!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
-    
     <footer>
         <div class="container-fluid">
           <!-- redes sociales -->
